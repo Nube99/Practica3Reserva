@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/muestraDatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="75dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/hacerOtraReservacion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="hacerOtraReserva"
+        android:text="Hacer Otra Reservacion"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:text="Ingresa tu Edad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edad"
+        android:layout_above="@+id/Buenos"
+        android:layout_toRightOf="@+id/muestraDatos" />
+
+    <TextView
+        android:text="¿Qué te parecen nuestros servicios?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/servicios"
+        android:layout_above="@+id/Buenos"
+        android:layout_alignParentRight="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Edad"
+        android:ems="6"
+        android:id="@+id/Ed"
+        android:layout_alignBaseline="@+id/Buenos"
+        android:layout_alignBottom="@+id/Buenos"
+        android:layout_toRightOf="@+id/muestraDatos" />
+
+    <TextView
+        android:text="Ingresa tu correo eléctronico:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/correo"
+        android:layout_above="@+id/Email"
+        android:layout_alignLeft="@+id/Email" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Barra2"
+        android:layout_below="@+id/Barra2"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:text="¿Cuántas veces haz visitado nuestras instalaciones?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Barra2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <RadioButton
+        android:text="Malos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Malos"
+        android:layout_alignTop="@+id/Ed"
+        android:layout_toLeftOf="@+id/Cel" />
+
+    <RadioButton
+        android:text="Buenos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Buenos"
+        android:layout_marginRight="13dp"
+        android:layout_above="@+id/hacerOtraReservacion"
+        android:layout_alignParentRight="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Correo Eléctronico"
+        android:id="@+id/Email"
+        android:layout_marginRight="33dp"
+        android:layout_above="@+id/hacerOtraReservacion"
+        android:layout_toLeftOf="@+id/servicios" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Télefono"
+        android:ems="4"
+        android:id="@+id/Cel"
+        android:layout_marginRight="56dp"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/Buenos" />
+
+    <TextView
+        android:text="Ingresa tu número telefonico:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numero"
+        android:layout_below="@+id/muestraDatos"
+        android:layout_alignRight="@+id/Buenos" />
+
+</RelativeLayout>
